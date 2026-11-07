@@ -1,0 +1,6 @@
+{
+  "path": "/api/data/clean",
+  "body": {
+    "csv": "name,value\n A ,10\nA,10\n,\n"
+  }
+}
