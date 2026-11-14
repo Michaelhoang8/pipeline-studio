@@ -176,3 +176,6 @@ body[data-app=clean] th { color:#89785f; }
 @media(max-width:850px) { body[data-app=clean] .workspace { grid-template-columns:1fr; } #pipeline-flow { padding:20px 12px; } body[data-app=clean] #source { height:230px; } body[data-app=clean] #clean-options { gap:14px; } body[data-app=clean] #clean-options legend { float:none; margin-bottom:15px; } }
 
 .flow-stage.bypassed strong { color:#a4afa7; }
+
+body[data-app=clean] .workspace { display:grid; }
+body[data-app=clean] .source { display:block; }
