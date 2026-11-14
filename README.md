@@ -4,6 +4,8 @@ Repeatable CSV cleaning with spreadsheet-safe exports and a complete source-row 
 
 ![Pipeline Studio preview](docs/app.png)
 
+The processing strip follows the actual per-row order: trimming, blank-row removal, then deduplication. Counts come from the completed report and clear when inputs change; disabled steps are marked off. The source editor and cleaned preview sit side by side. The strip scrolls inside mobile screens and respects reduced-motion preferences.
+
 ## Run
 
 Requires Python 3.11+; no third-party runtime dependencies. Clone this repository and run from its root:

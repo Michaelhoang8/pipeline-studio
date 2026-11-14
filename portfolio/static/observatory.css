@@ -151,3 +151,28 @@ body[data-app] .panel .section-head a{color:var(--blue);font-size:12px;text-unde
 
 body[data-app] button.report-export{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:9px 13px;font:600 12px/1.5 Arial,sans-serif}
 body[data-app] button.report-export:hover:not(:disabled){background:var(--bg);border-color:var(--blue)}
+
+/* CSV transformation workbench */
+body[data-app=clean] { --blue:#9b653c; --bg:#f7f5f0; --paper:var(--bg); }
+body[data-app=clean] main { padding-top:24px; }
+body[data-app=clean] #clean-options { display:flex; align-items:center; gap:28px; border:0; margin:0 0 24px; padding:0; flex-wrap:wrap; }
+body[data-app=clean] #clean-options legend { float:left; margin-right:25px; font:600 14px Arial,sans-serif; }
+body[data-app=clean] #clean-options label { margin:0; font-size:12px; }
+body[data-app=clean] #clean-options input { accent-color:#aa774b; }
+#pipeline-flow { display:flex; align-items:center; background:#28362f; color:#dfebe2; border-radius:4px; padding:28px; margin-bottom:28px; overflow:auto; }
+.flow-stage { flex:1; min-width:110px; text-align:center; }
+.flow-stage>span { font-size:11px; color:#bacbbd; }
+.flow-stage strong { display:block; font:38px ui-monospace,monospace; margin:10px 0; color:#e6c798; }
+.flow-stage small { font-size:10px; color:#a5bda9; }
+.flow-arrow { color:#68816e; font:25px Arial,sans-serif; padding:0 12px; }
+body[data-app=clean] .workspace { grid-template-columns:minmax(0,1fr) minmax(0,1.3fr); gap:25px; }
+body[data-app=clean] .source { padding:0; border:0; background:transparent; }
+body[data-app=clean] .source .upload { padding:10px 12px; }
+body[data-app=clean] #source { height:380px; background:#fffdfa; color:#615344; border-color:#dcd5ca; line-height:1.9; tab-size:2; }
+body[data-app=clean] .results { background:#fffefa; padding:24px; border-color:#ded9cf; }
+body[data-app=clean] .results .summary { background:#f1ede3; border-left-color:#b49465; }
+body[data-app=clean] td { padding:10px 8px; font:11px/1.6 ui-monospace,monospace; }
+body[data-app=clean] th { color:#89785f; }
+@media(max-width:850px) { body[data-app=clean] .workspace { grid-template-columns:1fr; } #pipeline-flow { padding:20px 12px; } body[data-app=clean] #source { height:230px; } body[data-app=clean] #clean-options { gap:14px; } body[data-app=clean] #clean-options legend { float:none; margin-bottom:15px; } }
+
+.flow-stage.bypassed strong { color:#a4afa7; }
